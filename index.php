@@ -1,35 +1,30 @@
-<?php 
-include("includes/config.php");
+<?php include("includes/header.php"); ?>
 
-//session_destroy();
 
-if(isset($_SESSION['userLoggedIn'])) {
-    $userLoggedIn = $_SESSION['userLoggedIn'];
-} else {
-    header("location: register.php");
-}
-?>
+<h1 class="pageHeadingBig">You Might Also Like</h1>
 
-<html>
-<head>
-    <title>Welcome to your Music Player!</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+<div class="gridViewContainer">
 
-<body>
+    <?php 
+        $albumQuery = mysqli_query($con, "SELECT * FROM albums ORDER BY RAND() LIMIT 10");
+        while($row = mysqli_fetch_array($albumQuery)) {
+    ?>
 
-    <div id="mainContainer">
+           <div class="gridViewItem">
+               <a href="album.php?id=<?php echo $row['id']; ?>">
+               <img src="<?php echo $row['artworkPath']; ?>" alt="">
+               <div class="gridViewInfo">
+                   <?php echo $row['title']; ?>
+               </div>
+               </a>
+           </div> 
 
-        <div id="topContainer">
-
-            <?php include("includes/navBarContainer.php") ?>
-
-        </div>
+    <?php      
+        }
+    ?> 
     
-        <?php include("includes/nowPlayingBarContainer.php") ?>
 
-    </div>
+</div>
 
-</body>
 
-</html>
+<?php include("includes/footer.php"); ?>
