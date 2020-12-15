@@ -152,15 +152,15 @@ margin: 0 auto;
 
 ////////////////////////////////////
 
-
-
-
-//Top Container//
-
 #topContainer {
     min-height: 100%;
     width: 100%;
 }
+
+
+//Nav Container//
+
+
 
 #navBarContainer {
     background-color: #000;
@@ -218,4 +218,14 @@ margin: 0 auto;
 
 
 
+
+
+//////////////////////////////////
+
+
+//Main Container//
+
+body {
+    
+}
 
