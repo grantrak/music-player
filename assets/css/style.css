@@ -72,9 +72,7 @@ margin: 0 auto;
     height: 20px;
 }
 
-.buttons .pause {
-    display: none;
-}
+
 
 .controlButton.play img, .controlButton.pause img {
     height: 32px;

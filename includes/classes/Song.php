@@ -22,11 +22,15 @@
             $this->albumId = $this->mysqliData['album'];
             $this->genre = $this->mysqliData['genre'];
             $this->duration = $this->mysqliData['duration'];
+            $this->id = $this->mysqliData['id'];
             $this->path = $this->mysqliData['path'];
         }
 
         public function getTitle() {
             return $this->title;
+        }
+        public function getId() {
+            return $this->id;
         }
         public function getArtist() {
             return new Artist($this->con, $this->artistId);
