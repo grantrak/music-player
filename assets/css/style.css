@@ -420,3 +420,53 @@ margin: 0 auto;
 [role=link] {
     cursor: pointer;
 }
+
+
+
+
+
+
+.searchContainer {
+    background-color: #242424;
+    padding: 20px 28px;
+}
+
+.searchContainer h4 {
+    margin: 0;
+    font-weight: 300px;
+}
+
+.searchContainer .searchInput {
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    font-size: 62px;
+    letter-spacing: 2px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchResultRow {
+    padding: 15px 10px;
+}
+
+.searchResultRow:hover {
+    background-color: #282828;
+}
+
+.searchResultRow .artistName span {
+    color: #fff;
+}
+
+.artistsContainer h2 {
+    text-align: center;
+}
+
+.noResults {
+    margin: 15px;
+    display: block;
+}
