@@ -18,7 +18,7 @@
                         </div>
 
                         <div class="navItem">
-                            <span onclick="openPage('index.php')" role="link" tabindex="0" class="navItemLink">Your Music</span>
+                            <span onclick="openPage('yourMusic.php')" role="link" tabindex="0" class="navItemLink">Your Music</span>
                         </div>
 
                         <div class="navItem">
