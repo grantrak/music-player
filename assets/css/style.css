@@ -522,3 +522,43 @@ input:focus {
     border: none;
 
 }
+
+
+
+
+
+
+
+.userInfo h1 {
+    text-align: center;
+}
+
+.userDetails {
+    padding: 20px;
+}
+
+.userDetails .container h2 {
+    text-align: center;
+}
+
+.userDetails .container input[type="text"], 
+.userDetails .container input[type="password"], 
+.userDetails .container button {
+    display: block;
+    margin: 16px auto;
+}
+
+.userDetails .container input {
+    height: 50px;
+    width: 100%;
+    background: #1F1F1F;
+    font-size: 18px;
+    border: none;
+    font-weight: 300;
+    padding: 0 20px;
+}
+
+.userDetails .message {
+    color: #2ebd59;
+    font-weight: 300;
+}
