@@ -101,7 +101,7 @@ margin: 0 auto;
 }
 
 .playbackBar .progressBar {
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 .progressBarBg {
@@ -184,6 +184,7 @@ margin: 0 auto;
 
 .logo {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .navItemLink .icon {
@@ -194,7 +195,7 @@ margin: 0 auto;
 }
 
 .logo img {
-    width: 32px;
+    width: 75px;
 }
 
 .navBar .group {
