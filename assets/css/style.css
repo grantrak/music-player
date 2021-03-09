@@ -442,7 +442,7 @@ margin: 0 auto;
 
 
 .searchContainer {
-    background-color: #242424;
+    background-color: rgba(77, 195, 215, 0.27);
     padding: 20px 28px;
 }
 
@@ -454,7 +454,7 @@ margin: 0 auto;
 .searchContainer .searchInput {
     width: 100%;
     background-color: transparent;
-    color: #fff;
+    color: #000;
     font-weight: 700;
     font-size: 62px;
     letter-spacing: 2px;
@@ -470,11 +470,14 @@ input:focus {
 }
 
 .searchResultRow:hover {
-    background-color: #282828;
+    background-color: rgba(77, 195, 215, 0.27);
 }
 
 .searchResultRow .artistName span {
     color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
 }
 
 .trackInfo .artistName {
@@ -585,3 +588,4 @@ input:focus {
     color: #2ebd59;
     font-weight: 300;
 }
+
