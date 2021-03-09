@@ -21,6 +21,8 @@ if(isset($_SESSION['userLoggedIn'])) {
 <head>
     <title>Welcome to your Music Player!</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </head>
