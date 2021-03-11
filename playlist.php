@@ -15,7 +15,7 @@ $owner = new User($con, $playlist->getOwner());
 <div class="entityInfo">
     <div class="leftSection">
         <div class="playlistImage">
-            <img src="assets/images/icons/playlist.png" alt="">
+            <img src="assets/images/icons/playlist2.svg" alt="">
         </div>
     </div>
     <div class="rightSection">

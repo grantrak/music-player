@@ -26,7 +26,7 @@ include("includes/includedFiles.php");
 
            <div class="gridViewItem" role='link' tabindex="0" onclick="openPage('playlist.php?id=<?php echo $playlist->getId(); ?>')">
                <div class="playlistImage">
-                   <img src="assets/images/icons/playlist.png" alt="">
+                   <img src="assets/images/icons/playlist2.svg" alt="">
                </div>
                 <div class="gridViewInfo">
                    <?php echo $playlist->getName(); ?>

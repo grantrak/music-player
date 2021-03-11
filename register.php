@@ -17,7 +17,7 @@
 
 <html>
 <head>
-    <title>Welcome to Slotify!</title>
+    <title>Music PLayer</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
@@ -55,24 +55,29 @@
          });
     </script>
 <div id="background">
+	<div class="banner container">
+		<img src="assets/images/icons/music-logo.png" alt="Home">
+		<h1>Music Player</h1>
+	</div>
     <div id="loginContainer">
 	<div id="inputContainer">
 		<form id="loginForm" action="register.php" method="POST">
-			<h2>Login to your account</h2>
+			<h2>Login to start listening!</h2>
 			<p>
             <?php echo $account->getError(Constants::$loginFailed); ?>
-				<label for="loginUsername">Username</label>
-				<input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. bartSimpson" required>
+				<input id="loginUsername" name="loginUsername" type="text" placeholder="Username" required>
 			</p>
 			<p>
-				<label for="loginPassword">Password</label>
-				<input id="loginPassword" name="loginPassword" type="password" placeholder="Your password" required>
+				
+				<input id="loginPassword" name="loginPassword" type="password" placeholder="Password" required>
 			</p>
+		 	<div class="btn-container">
 
-            <button type="submit" name="loginButton">LOG IN</button>
+			 <button id="logbtn" type="submit" name="loginButton" class="button button-green">LOG IN</button>
+			 </div>
             
             <div class="hasAccountText">
-                <span id="hideLogin">Don't have an account yet? Signup here.</span>
+                <span id="hideLogin">Don't have an account yet? Signup <span class="underline">here.</span></span>
             </div>
 			
 		</form>
@@ -85,7 +90,7 @@
                 <?php echo $account->getError(Constants::$usernameCharacters); ?>
                 <?php echo $account->getError(Constants::$usernameTaken); ?>
 				<label for="username">Username</label>
-				<input id="username" name="username" type="text" placeholder="e.g. bartSimpson" value="<?php getInputValue('username') ?>" required>
+				<input id="username" name="username" type="text" placeholder="e.g. bartsimpson" value="<?php getInputValue('username') ?>" required>
 			</p>
 
 			<p>
@@ -125,27 +130,17 @@
 				<label for="password2">Confirm password</label>
 				<input id="password2" name="password2" type="password" placeholder="Your password" required>
 			</p>
-
-			<button type="submit" name="registerButton">SIGN UP</button>
+		 	<div class="btn-container">
+			 	<button id="regbtn" type="submit" name="registerButton" class="button button-green">SIGN UP</button>
+			 </div>
+			
 			<div class="hasAccountText">
-                <span id="hideRegister">Already have an account? Login here.</span>
+                <span id="hideRegister">Already have an account? Login <span class="underline">here.</span></span>
             </div>
 		</form>
 
 
-    </div>
-
-         <div id="loginText">
-             <h1>Get great music, right now</h1>
-             <h2>Listen to loads of songs for free.</h2>
-             <ul>
-                 <li>Discover Music You'll fall in love with</li>
-                 <li>Create your own PLaylists</li>
-                 <li>Follow artists to stay up to date</li>
-             </ul>
-         </div>
-
-    </div>
+    
     </div>
 </body>
 </html>

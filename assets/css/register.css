@@ -2,21 +2,23 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 #background {
-    background-color: #000;
-    background-image: url("../images/bg.jpg");
+    background-color: #fff;
     background-position: center;
     background-size: cover;
     display: table;
     height: 100%;
     width: 100%;
+    background: linear-gradient(150deg, #34E4F4, #3EACE9);
 }
 
 #loginContainer * {
-    color: #fff;
-    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     line-height: 1em;
     box-sizing: border-box;
@@ -25,60 +27,65 @@ html, body {
 #loginContainer {
     width: 80%;
     margin: 0 auto;
-    position: relative;
-    max-width: 1024px;
+    max-width: 600px;
 }
 
 #inputContainer {
-    width: 400px;
-    padding: 45px;
-    float: left;
-    border-right: 1px solid #999;
+    padding: 25px 65px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(50, 50, 50, 0.5);
+    margin-bottom: 60px;
 }
 
 #inputContainer h2 {
     text-align: center;
+    font-size: 24px;
+    margin-bottom: 35px;
+    color: #3EACE9;
 }
 
 #inputContainer input[type="text"], #inputContainer input[type="email"], #inputContainer input[type="password"] {
     display: block;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
     height: 27px;
     width: 100%;
+    font-size: 15px;
+    margin: 10px auto;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #fff;
+    color:    #a0a0a0;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #fff;
+   color:    #a0a0a0;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #fff;
+   color:    #a0a0a0;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #fff;
+   color:    #a0a0a0;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #fff;
+   color:    #a0a0a0;
 }
 
 ::placeholder { /* Most modern browsers support this now. */
-   color:    #fff;
+   color:    #a0a0a0;
 }
 
 #inputContainer label {
-    color: #a0a0a0;
-    font-size: 13px;
-    margin-top: 15px;
+    color: #000;
+    font-size: 16px;
+    margin-top: 40px;
     display: block;
 }
 
-#inputContainer button {
+/* #inputContainer button {
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 250px;
@@ -92,6 +99,44 @@ html, body {
 
 #inputContainer button:hover {
     cursor: pointer;
+} */
+
+.btn-container {
+    width: 100%;
+    text-align: center;
+}
+
+#regbtn, #logbtn {
+    color: #fff;
+    margin-top: 15px;
+}
+
+#regbtn:hover, #logbtn:hover {
+    color: #3EACE9;
+}
+
+.button {
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    border-radius: 500px;
+    padding: 15px;
+    min-width: 130px;
+}
+
+.button-green {
+    background: linear-gradient(150deg, #34E4F4, #3EACE9);
+}
+
+.button-green:hover {
+    background: #fff;
+    color: #3EACE9;
+    border: 2px solid #3EACE9;
 }
 
 .hasAccountText span {
@@ -135,8 +180,36 @@ html, body {
 }
 
 #inputContainer .errorMessage {
-    color: #07d159;
+    color: red;
     font-size: 12px;
     display: block;
     margin-bottom: 5px;
+}
+
+
+
+
+.banner {
+    
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 54px;
+    font-weight: 800;
+    margin: -35px auto 0 auto;
+    padding-bottom: 65px;
+}
+
+.banner img {
+    transform: scale(.33);
+    margin: -130px auto;
+}
+
+#inputContainer p {
+    margin-top: 25px;
+}
+
+.underline {
+    text-decoration: underline;
 }
