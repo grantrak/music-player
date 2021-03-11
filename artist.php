@@ -11,7 +11,7 @@ if(isset($_GET['id'])) {
 $artist = new Artist($con, $artistId);
 ?>
 
-<div class="entityInfo borderBottom">
+<div class="entityInfo">
 
     <div class="centerSection">
 
@@ -32,7 +32,7 @@ $artist = new Artist($con, $artistId);
 
 
 
-<div class="tracklistContainer borderBottom">
+<div class="tracklistContainer">
 
 <h2>SONGS</h2>
 
