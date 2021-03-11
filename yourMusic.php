@@ -5,7 +5,7 @@ include("includes/includedFiles.php");
 
 <div class="playlistContainer">
     <div class="gridViewContainer">
-        <h2>PLAYLISTS</h2>
+        <h1>PLAYLISTS</h1>
         <div class="buttonItems">
             <button class="button button-green" onclick="createPlaylist()">NEW PLAYLIST</button>
         </div>

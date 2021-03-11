@@ -184,7 +184,7 @@ margin: 0 auto;
 }
 
 .logo {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -429,7 +429,7 @@ margin: 0 auto;
     margin-bottom: 20px;
 }
 
-.trackListContainer h2, .gridViewContainer h2 {
+.trackListContainer h2, .gridViewContainer h1 {
     text-align: center;
 }
 
