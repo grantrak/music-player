@@ -32,6 +32,7 @@
 				return $this->insertUserDetails($un, $fn, $ln, $em, $pw);
 			}
 			else {
+				echo mysqli_error($this->con);
 				return false;
 			}
 

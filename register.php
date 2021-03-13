@@ -47,13 +47,13 @@
         </script>';
         }
     ?> 
-    <script>
+    <!-- <script>
         $(document).ready(function() {
 
             $("#loginForm").show();
             $("#registerForm").hide();
          });
-    </script>
+    </script> -->
 <div id="background">
 	<div class="banner container">
 		<img src="assets/images/icons/music-logo.png" alt="Home">
