@@ -169,7 +169,7 @@ margin: 0 auto;
 
 #navBarContainer {
     background: linear-gradient(150deg, #34E4F4, #3EACE9);
-    box-shadow: 2px -2px 11px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px -8px 11px rgba(0, 0, 0, 0.5);
     width: 220px;
     height: 100vh;
     position: fixed;
@@ -229,7 +229,7 @@ margin: 0 auto;
 }
 
 #mainContent {
-   padding: 0 20px; 
+   padding: 0 40px; 
 }
 
 .pageHeadingBig {
@@ -312,9 +312,9 @@ margin: 0 auto;
 
 .tracklistRow {
     height: 40px;
-    padding: 15px 30px 20px 30px;
+    padding: 15px 40px 20px 40px;
     list-style: none;
-    margin: 0 -20px;
+    margin: 0 -40px;
     border-top: 1px solid #D6D6D6;
 }
 
@@ -429,7 +429,7 @@ margin: 0 auto;
     margin-bottom: 20px;
 }
 
-.trackListContainer h2, .gridViewContainer h1 {
+.trackListContainer h2, .gridViewContainer h2, .gridViewContainer h1 {
     text-align: center;
 }
 
@@ -440,11 +440,14 @@ margin: 0 auto;
 
 
 
-
+.searchHeading {
+    margin-top: 75px;
+}
 
 .searchContainer {
     background-color: rgba(77, 195, 215, 0.27);
-    padding: 20px 28px;
+    padding: 15px 40px;
+    margin: 0 -40px;
 }
 
 .searchContainer h4 {
@@ -456,9 +459,9 @@ margin: 0 auto;
     width: 100%;
     background-color: transparent;
     color: #000;
-    font-weight: 700;
-    font-size: 62px;
-    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 1px;
     border: none;
 }
 

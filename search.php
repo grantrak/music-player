@@ -27,14 +27,14 @@ if(isset($_GET['term'])) {
     });
 </script>
 <?php if($term == "") exit(); ?>
-<div class="tracklistContainer borderBottom">
+<div class="tracklistContainer">
 
 <h2>SONGS</h2>
 
     <ul class="tracklist">
        <?php 
 
-        $songsQuery = mysqli_query($con, "SELECT id FROM songs WHERE title LIKE '$term%' LIMIT 10");
+        $songsQuery = mysqli_query($con, "SELECT id FROM songs WHERE title LIKE '%$term%' LIMIT 10");
 
         if(mysqli_num_rows($songsQuery) == 0) {
             echo "<span class='noResults'>No songs found matching " . $term . "<span>";
@@ -88,11 +88,11 @@ if(isset($_GET['term'])) {
 
 </div>
 
-<div class="artistsContainer borderBottom">
-     <h2>ARTISTS</h2>   
+<div class="artistsContainer">
+     <h2 class="searchHeading">ARTISTS</h2>   
      <?php 
      
-     $artistsQuery = mysqli_query($con, "SELECT id FROM artists WHERE name LIKE '$term%' LIMIT 10");
+     $artistsQuery = mysqli_query($con, "SELECT id FROM artists WHERE name LIKE '%$term%' LIMIT 10");
 
      if(mysqli_num_rows($artistsQuery) == 0) {
         echo "<span class='noResults'>No artists found matching " . $term . "<span>";
@@ -104,7 +104,7 @@ if(isset($_GET['term'])) {
 
        <div class="searchResultRow">
            <div class="artistName">
-               <span role="link" tabindex="0" onclick="openpage('artist.php?id=<?php echo $artistFound->getId(); ?>')"><?php echo $artistFound->getName(); ?></span>
+               <span role="link" tabindex="0" onclick="openPage('artist.php?id=<?php echo $artistFound->getId(); ?>')"><?php echo $artistFound->getName(); ?></span>
            </div>
        </div> 
 
@@ -120,10 +120,10 @@ if(isset($_GET['term'])) {
 
 <div class="gridViewContainer">
 
-<h2>ALBUMS</h2>
+<h2 class="searchHeading">ALBUMS</h2>
 
     <?php 
-        $albumQuery = mysqli_query($con, "SELECT * FROM albums WHERE title like '$term%' LIMIT 10");
+        $albumQuery = mysqli_query($con, "SELECT * FROM albums WHERE title like '%$term%' LIMIT 10");
 
         if(mysqli_num_rows($albumQuery) == 0) {
             echo "<span class='noResults'>No albums found matching " . $term . "<span>";
